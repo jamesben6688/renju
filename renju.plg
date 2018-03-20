@@ -1,0 +1,79 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: renju - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\jamesben\AppData\Local\Temp\RSPB50C.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\jamesben\Desktop\renju\NegaScout_TT_HH.cpp"
+"C:\Users\jamesben\Desktop\renju\renju.cpp"
+"C:\Users\jamesben\Desktop\renju\renjuDlg.cpp"
+]
+Creating command line "cl.exe @C:\Users\jamesben\AppData\Local\Temp\RSPB50C.tmp" 
+Creating temporary file "C:\Users\jamesben\AppData\Local\Temp\RSPB50D.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Debug/renju.pdb" /debug /machine:I386 /out:"Debug/renju.exe" /pdbtype:sept 
+.\Debug\Eveluation.obj
+.\Debug\HistoryHeuristic.obj
+.\Debug\MoveGenerator.obj
+.\Debug\NegaScout_TT_HH.obj
+.\Debug\NewGame.obj
+.\Debug\renju.obj
+.\Debug\renjuDlg.obj
+.\Debug\SearchEngine.obj
+.\Debug\StdAfx.obj
+.\Debug\TranspositionTable.obj
+.\Debug\renju.res
+]
+Creating command line "link.exe @C:\Users\jamesben\AppData\Local\Temp\RSPB50D.tmp"
+<h3>Output Window</h3>
+Compiling...
+NegaScout_TT_HH.cpp
+c:\users\jamesben\desktop\renju\negascout_tt_hh.h(50) : error C2555: 'CNegaScout_TT_HH::SearchAGoodMove' : overriding virtual function differs from 'CSearchEngine::SearchAGoodMove' only by return type or calling convention
+        c:\users\jamesben\desktop\renju\searchengine.h(16) : see declaration of 'CSearchEngine'
+renju.cpp
+c:\users\jamesben\desktop\renju\negascout_tt_hh.h(50) : error C2555: 'CNegaScout_TT_HH::SearchAGoodMove' : overriding virtual function differs from 'CSearchEngine::SearchAGoodMove' only by return type or calling convention
+        c:\users\jamesben\desktop\renju\searchengine.h(16) : see declaration of 'CSearchEngine'
+renjuDlg.cpp
+c:\users\jamesben\desktop\renju\negascout_tt_hh.h(50) : error C2555: 'CNegaScout_TT_HH::SearchAGoodMove' : overriding virtual function differs from 'CSearchEngine::SearchAGoodMove' only by return type or calling convention
+        c:\users\jamesben\desktop\renju\searchengine.h(16) : see declaration of 'CSearchEngine'
+c:\users\jamesben\desktop\renju\renjudlg.cpp(95) : error C2259: 'CNegaScout_TT_HH' : cannot instantiate abstract class due to following members:
+        c:\users\jamesben\desktop\renju\negascout_tt_hh.h(41) : see declaration of 'CNegaScout_TT_HH'
+c:\users\jamesben\desktop\renju\renjudlg.cpp(95) : warning C4259: 'void __thiscall CSearchEngine::SearchAGoodMove(unsigned char [][15],int)' : pure virtual function was not defined
+        c:\users\jamesben\desktop\renju\searchengine.h(21) : see declaration of 'SearchAGoodMove'
+c:\users\jamesben\desktop\renju\renjudlg.cpp(95) : error C2259: 'CNegaScout_TT_HH' : cannot instantiate abstract class due to following members:
+        c:\users\jamesben\desktop\renju\negascout_tt_hh.h(41) : see declaration of 'CNegaScout_TT_HH'
+c:\users\jamesben\desktop\renju\renjudlg.cpp(95) : warning C4259: 'void __thiscall CSearchEngine::SearchAGoodMove(unsigned char [][15],int)' : pure virtual function was not defined
+        c:\users\jamesben\desktop\renju\searchengine.h(21) : see declaration of 'SearchAGoodMove'
+Generating Code...
+执行 cl.exe 时出错.
+Creating temporary file "C:\Users\jamesben\AppData\Local\Temp\RSPC3C4.tmp" with contents
+[
+/nologo /o"Debug/renju.bsc" 
+.\Debug\StdAfx.sbr
+.\Debug\Eveluation.sbr
+.\Debug\HistoryHeuristic.sbr
+.\Debug\MoveGenerator.sbr
+.\Debug\NegaScout_TT_HH.sbr
+.\Debug\NewGame.sbr
+.\Debug\renju.sbr
+.\Debug\renjuDlg.sbr
+.\Debug\SearchEngine.sbr
+.\Debug\TranspositionTable.sbr]
+Creating command line "bscmake.exe @C:\Users\jamesben\AppData\Local\Temp\RSPC3C4.tmp"
+Creating browse info file...
+BSCMAKE: error BK1510 : corrupt .SBR file '.\Debug\StdAfx.sbr'
+执行 bscmake.exe 时出错.
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+renju.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
